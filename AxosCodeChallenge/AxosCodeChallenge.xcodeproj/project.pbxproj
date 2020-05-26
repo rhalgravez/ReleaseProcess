@@ -13,6 +13,7 @@
 		624CDFA7247CDF8800E1DD81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CDFA5247CDF8800E1DD81 /* LaunchScreen.storyboard */; };
 		624CDFAF247CE66200E1DD81 /* SearchTickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDFAE247CE66200E1DD81 /* SearchTickerViewController.swift */; };
 		624CDFB1247CECB700E1DD81 /* AXIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDFB0247CECB700E1DD81 /* AXIButton.swift */; };
+		624CDFB3247CFD1B00E1DD81 /* AXITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDFB2247CFD1B00E1DD81 /* AXITextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		624CDFA8247CDF8800E1DD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624CDFAE247CE66200E1DD81 /* SearchTickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerViewController.swift; sourceTree = "<group>"; };
 		624CDFB0247CECB700E1DD81 /* AXIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXIButton.swift; sourceTree = "<group>"; };
+		624CDFB2247CFD1B00E1DD81 /* AXITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXITextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				624CDFA8247CDF8800E1DD81 /* Info.plist */,
 				624CDFAE247CE66200E1DD81 /* SearchTickerViewController.swift */,
 				624CDFB0247CECB700E1DD81 /* AXIButton.swift */,
+				624CDFB2247CFD1B00E1DD81 /* AXITextField.swift */,
 			);
 			path = AxosCodeChallenge;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				624CDFB3247CFD1B00E1DD81 /* AXITextField.swift in Sources */,
 				624CDFB1247CECB700E1DD81 /* AXIButton.swift in Sources */,
 				624CDFAF247CE66200E1DD81 /* SearchTickerViewController.swift in Sources */,
 				624CDF9B247CDF8300E1DD81 /* AppDelegate.swift in Sources */,
