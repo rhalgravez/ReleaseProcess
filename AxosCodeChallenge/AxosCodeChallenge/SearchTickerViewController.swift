@@ -13,8 +13,7 @@ class SearchTickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Axos Investment"
-        view.backgroundColor = .systemGray
+        view.backgroundColor = .white
     }
     
 
