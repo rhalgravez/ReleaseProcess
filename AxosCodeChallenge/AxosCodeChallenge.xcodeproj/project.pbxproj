@@ -9,19 +9,19 @@
 /* Begin PBXBuildFile section */
 		624CDF9B247CDF8300E1DD81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDF9A247CDF8300E1DD81 /* AppDelegate.swift */; };
 		624CDF9D247CDF8300E1DD81 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDF9C247CDF8300E1DD81 /* SceneDelegate.swift */; };
-		624CDF9F247CDF8300E1DD81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDF9E247CDF8300E1DD81 /* ViewController.swift */; };
 		624CDFA4247CDF8800E1DD81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624CDFA3247CDF8800E1DD81 /* Assets.xcassets */; };
 		624CDFA7247CDF8800E1DD81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624CDFA5247CDF8800E1DD81 /* LaunchScreen.storyboard */; };
+		624CDFAF247CE66200E1DD81 /* SearchTickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDFAE247CE66200E1DD81 /* SearchTickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		624CDF97247CDF8300E1DD81 /* AxosCodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AxosCodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624CDF9A247CDF8300E1DD81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624CDF9C247CDF8300E1DD81 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		624CDF9E247CDF8300E1DD81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		624CDFA3247CDF8800E1DD81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		624CDFA6247CDF8800E1DD81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		624CDFA8247CDF8800E1DD81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624CDFAE247CE66200E1DD81 /* SearchTickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 			children = (
 				624CDF9A247CDF8300E1DD81 /* AppDelegate.swift */,
 				624CDF9C247CDF8300E1DD81 /* SceneDelegate.swift */,
-				624CDF9E247CDF8300E1DD81 /* ViewController.swift */,
 				624CDFA3247CDF8800E1DD81 /* Assets.xcassets */,
 				624CDFA5247CDF8800E1DD81 /* LaunchScreen.storyboard */,
 				624CDFA8247CDF8800E1DD81 /* Info.plist */,
+				624CDFAE247CE66200E1DD81 /* SearchTickerViewController.swift */,
 			);
 			path = AxosCodeChallenge;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624CDF9F247CDF8300E1DD81 /* ViewController.swift in Sources */,
+				624CDFAF247CE66200E1DD81 /* SearchTickerViewController.swift in Sources */,
 				624CDF9B247CDF8300E1DD81 /* AppDelegate.swift in Sources */,
 				624CDF9D247CDF8300E1DD81 /* SceneDelegate.swift in Sources */,
 			);
