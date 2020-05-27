@@ -34,6 +34,23 @@ class TimeSerie {
         let closePriceString = numberFormatter.string(from: NSDecimalNumber(decimal: closePrice)) ?? "#####"
         return "$ \(closePriceString)"
     }
+    
+    func priceChangeTextualValue() -> String? {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .percent
+        numberFormatter.multiplier = 1.0
+        numberFormatter.maximumFractionDigits = 4
+        let locale = Locale(identifier: "en_US")
+        numberFormatter.locale = locale
+        
+        guard let priceChange = priceChange else {
+            return "N/A"
+        }
+        let closePriceString = numberFormatter.string(from: NSDecimalNumber(decimal: priceChange)) ?? "N/A"
+        return "\(closePriceString)"
+    }
+    
+    
 }
 
 extension TimeSerie {

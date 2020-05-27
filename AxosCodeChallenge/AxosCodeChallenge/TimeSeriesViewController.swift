@@ -38,9 +38,15 @@ class TimeSeriesViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TimeSeriesTableViewCell.reuseID, for: indexPath) as! TimeSeriesTableViewCell
         
-        let timeSerie = series[indexPath.row]
+        let currentTimeSerie = series[indexPath.row]
         
-        cell.set(timeSerie: timeSerie)
+        var previousTimeSerie: TimeSerie? = nil
+        if indexPath.row != series.count - 1 {
+            previousTimeSerie = series[indexPath.row + 1]
+        }
+        cell.set(timeSerie: currentTimeSerie)
+        cell.calculatePriceChange(currentSerie: currentTimeSerie, previousSerie: previousTimeSerie)
+        
         return cell
     }
 

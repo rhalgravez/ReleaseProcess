@@ -53,7 +53,16 @@ class TimeSeriesTableViewCell: UITableViewCell {
         closePriceValueLabel.text = timeSerie.closePriceTextualValue()
         dateLabel.text = timeSerie.date
         volumeValueLabel.text = "\(timeSerie.volume)"
-        priceChangeValueLabel.text = "$ \(timeSerie.priceChange)"
+    }
+    
+    func calculatePriceChange(currentSerie: TimeSerie, previousSerie:TimeSerie?) {
+        if let previousSerie = previousSerie {
+            let percentageChange = ((currentSerie.closePrice - previousSerie.closePrice) / previousSerie.closePrice) * 100
+            currentSerie.priceChange = percentageChange
+            priceChangeValueLabel.text = currentSerie.priceChangeTextualValue()
+        } else {
+            priceChangeValueLabel.text = "N/A"
+        }
     }
     
     private func addSubviewsToContentView() {
