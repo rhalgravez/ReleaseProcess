@@ -73,7 +73,7 @@ class SearchTickerViewController: UIViewController {
             switch result {
             case .success(let series):
                 DispatchQueue.main.async {
-                    let timeSeriesVC = TimeSeriesViewController(series: series)
+                    let timeSeriesVC = TimeSeriesViewController(series: series, forSymbol: symbol)
                     self.navigationController?.pushViewController(timeSeriesVC, animated: true)
                 }
             case .failure(let error):

@@ -9,11 +9,13 @@
 import UIKit
 
 class TimeSeriesViewController: UITableViewController {
-
+    
+    let symbol: String
     var series: [TimeSerie]
     
-    init(series array:[TimeSerie]) {
+    init(series array:[TimeSerie], forSymbol: String) {
         self.series = array
+        self.symbol = forSymbol
         super.init(nibName: nil, bundle: nil)
     }
     
@@ -24,6 +26,8 @@ class TimeSeriesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = symbol
+        
         view.backgroundColor = .white
         tableView.register(TimeSeriesTableViewCell.self, forCellReuseIdentifier: TimeSeriesTableViewCell.reuseID)
         tableView.rowHeight = 136
