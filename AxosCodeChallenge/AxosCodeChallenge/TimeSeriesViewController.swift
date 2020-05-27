@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class TimeSeriesViewController: UITableViewController {
     
     let symbol: String
@@ -28,11 +30,21 @@ class TimeSeriesViewController: UITableViewController {
 
         title = symbol
         
+        let chartButton = UIBarButtonItem(image: UIImage(systemName: "chart.bar.fill"), style: .plain, target: self, action: #selector(showChart))
+        navigationItem.rightBarButtonItem = chartButton
+        
         view.backgroundColor = .white
         tableView.register(TimeSeriesTableViewCell.self, forCellReuseIdentifier: TimeSeriesTableViewCell.reuseID)
         tableView.rowHeight = 136
         tableView.allowsSelection = false
         tableView.separatorStyle = .none
+    }
+    
+    @objc private func showChart() {
+        let chartViewController = ChartViewController(timeSeries: series)
+        let navigationController = UINavigationController(rootViewController: chartViewController)
+        navigationController.navigationBar.barTintColor = UIColor(red: 0.27, green: 0.35, blue: 0.41, alpha: 1.00)
+        present(navigationController, animated: true)
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
