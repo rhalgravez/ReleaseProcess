@@ -41,7 +41,12 @@ class NetworkManager {
                 if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any] {
                     print("\(json)")
                     let timeSerie = TimeSerie.timeSeriesArray(from: json)
-                    completed(.success(timeSerie))
+                    if timeSerie.isEmpty {
+                        completed(.failure(.invalidData))
+                    } else {
+                        completed(.success(timeSerie))
+                    }
+                    
                 }
             }catch {
                 completed(.failure(.invalidData))

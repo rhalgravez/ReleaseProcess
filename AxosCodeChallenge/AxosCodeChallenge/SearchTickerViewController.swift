@@ -74,14 +74,24 @@ class SearchTickerViewController: UIViewController {
             case .success(let series):
                 DispatchQueue.main.async {
                     let timeSeriesVC = TimeSeriesViewController(series: series, forSymbol: symbol)
+                    
                     self.navigationController?.pushViewController(timeSeriesVC, animated: true)
                 }
             case .failure(let error):
-                print(error.rawValue)
+                DispatchQueue.main.async {
+                    self.showAlert(title: "There was an Error.", message: error.rawValue)
+                }
             }
-            
         }
         
+    }
+    
+    func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        
+        present(alert, animated: true)
     }
 }
 
