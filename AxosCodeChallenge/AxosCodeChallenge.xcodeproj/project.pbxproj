@@ -15,6 +15,9 @@
 		624CDFB1247CECB700E1DD81 /* AXIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDFB0247CECB700E1DD81 /* AXIButton.swift */; };
 		624CDFB3247CFD1B00E1DD81 /* AXITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624CDFB2247CFD1B00E1DD81 /* AXITextField.swift */; };
 		62EBA729247E159E003B0C39 /* TimeSeriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA728247E159E003B0C39 /* TimeSeriesViewController.swift */; };
+		62EBA72F247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA72E247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift */; };
+		62EBA731247E564A003B0C39 /* AXILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA730247E564A003B0C39 /* AXILabel.swift */; };
+		62EBA733247E56EB003B0C39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA732247E56EB003B0C39 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		624CDFB0247CECB700E1DD81 /* AXIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXIButton.swift; sourceTree = "<group>"; };
 		624CDFB2247CFD1B00E1DD81 /* AXITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXITextField.swift; sourceTree = "<group>"; };
 		62EBA728247E159E003B0C39 /* TimeSeriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesViewController.swift; sourceTree = "<group>"; };
+		62EBA72E247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesTableViewCell.swift; sourceTree = "<group>"; };
+		62EBA730247E564A003B0C39 /* AXILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXILabel.swift; sourceTree = "<group>"; };
+		62EBA732247E56EB003B0C39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +75,9 @@
 				62EBA728247E159E003B0C39 /* TimeSeriesViewController.swift */,
 				624CDFB0247CECB700E1DD81 /* AXIButton.swift */,
 				624CDFB2247CFD1B00E1DD81 /* AXITextField.swift */,
+				62EBA72E247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift */,
+				62EBA730247E564A003B0C39 /* AXILabel.swift */,
+				62EBA732247E56EB003B0C39 /* Constants.swift */,
 			);
 			path = AxosCodeChallenge;
 			sourceTree = "<group>";
@@ -143,10 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62EBA733247E56EB003B0C39 /* Constants.swift in Sources */,
 				624CDFB3247CFD1B00E1DD81 /* AXITextField.swift in Sources */,
 				624CDFB1247CECB700E1DD81 /* AXIButton.swift in Sources */,
 				62EBA729247E159E003B0C39 /* TimeSeriesViewController.swift in Sources */,
 				624CDFAF247CE66200E1DD81 /* SearchTickerViewController.swift in Sources */,
+				62EBA72F247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift in Sources */,
+				62EBA731247E564A003B0C39 /* AXILabel.swift in Sources */,
 				624CDF9B247CDF8300E1DD81 /* AppDelegate.swift in Sources */,
 				624CDF9D247CDF8300E1DD81 /* SceneDelegate.swift in Sources */,
 			);
