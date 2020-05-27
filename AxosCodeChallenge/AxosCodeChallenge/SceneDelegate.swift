@@ -20,6 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window?.windowScene = windowScene
         
         let navigationController = UINavigationController(rootViewController: SearchTickerViewController())
+        UINavigationBar.appearance().tintColor = .white
         navigationController.navigationBar.barTintColor = UIColor(red: 0.27, green: 0.35, blue: 0.41, alpha: 1.00)
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

@@ -19,6 +19,7 @@ class SearchTickerViewController: UIViewController {
         super.viewDidLoad()
 
         view.backgroundColor = .white
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         configureLogoImageView()
         configureSymbolTextField()
         configureSearchButton()
@@ -39,6 +40,7 @@ class SearchTickerViewController: UIViewController {
     
     private func configureSymbolTextField() {
         view.addSubview(symbolTextField)
+        symbolTextField.delegate = self
         
         NSLayoutConstraint.activate([
             symbolTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 0),
@@ -51,6 +53,7 @@ class SearchTickerViewController: UIViewController {
     
     private func configureSearchButton() {
         view.addSubview(searchButton)
+        searchButton.addTarget(self, action: #selector(searchButtonAction), for: .touchUpInside)
         
         NSLayoutConstraint.activate([
             searchButton.topAnchor.constraint(equalTo: symbolTextField.bottomAnchor, constant: 16),
@@ -61,5 +64,16 @@ class SearchTickerViewController: UIViewController {
         ])
     }
     
-
+    @objc private func searchButtonAction() {
+        let timeSeriesVC = TimeSeriesViewController()
+        navigationController?.pushViewController(timeSeriesVC, animated: true)
+    }
 }
+
+extension SearchTickerViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchButtonAction()
+        return true
+    }
+}
+
