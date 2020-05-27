@@ -10,6 +10,17 @@ import UIKit
 
 class TimeSeriesViewController: UITableViewController {
 
+    var series: [TimeSerie]
+    
+    init(series array:[TimeSerie]) {
+        self.series = array
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,18 +32,15 @@ class TimeSeriesViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return series.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TimeSeriesTableViewCell.reuseID, for: indexPath) as! TimeSeriesTableViewCell
-        cell.closePriceTitleLabel.text = "Close Price:"
-        cell.closePriceValueLabel.text = "$ 430.26"
-        cell.dateLabel.text = "2019-12-31"
-        cell.volumeTitleLabel.text = "Volume:"
-        cell.volumeValueLabel.text = "999999999"
-        cell.priceChangeTitleLabel.text = "Percentage Change:"
-        cell.priceChangeValueLabel.text = "$ -12.20"
+        
+        let timeSerie = series[indexPath.row]
+        
+        cell.set(timeSerie: timeSerie)
         return cell
     }
 

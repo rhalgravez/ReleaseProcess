@@ -65,8 +65,23 @@ class SearchTickerViewController: UIViewController {
     }
     
     @objc private func searchButtonAction() {
-        let timeSeriesVC = TimeSeriesViewController()
-        navigationController?.pushViewController(timeSeriesVC, animated: true)
+        guard let symbol = symbolTextField.text else { return }
+        
+        NetworkManager.shared.getTimeSeriesDaily(for: symbol) { [weak self] result in
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let series):
+                DispatchQueue.main.async {
+                    let timeSeriesVC = TimeSeriesViewController(series: series)
+                    self.navigationController?.pushViewController(timeSeriesVC, animated: true)
+                }
+            case .failure(let error):
+                print(error.rawValue)
+            }
+            
+        }
+        
     }
 }
 

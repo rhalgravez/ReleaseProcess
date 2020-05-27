@@ -31,6 +31,9 @@ class TimeSeriesTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configure()
+        closePriceTitleLabel.text = "Close Price:"
+        volumeTitleLabel.text = "Volume:"
+        priceChangeTitleLabel.text = "Percentage Change:"
     }
     
     required init?(coder: NSCoder) {
@@ -44,6 +47,13 @@ class TimeSeriesTableViewCell: UITableViewCell {
         configureDateLabel()
         configureVolumeLabeles()
         configureChangePriceLabeles()
+    }
+    
+    func set(timeSerie: TimeSerie) {
+        closePriceValueLabel.text = timeSerie.closePriceTextualValue()
+        dateLabel.text = timeSerie.date
+        volumeValueLabel.text = "\(timeSerie.volume)"
+        priceChangeValueLabel.text = "$ \(timeSerie.priceChange)"
     }
     
     private func addSubviewsToContentView() {
