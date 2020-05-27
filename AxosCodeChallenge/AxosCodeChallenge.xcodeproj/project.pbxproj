@@ -18,6 +18,9 @@
 		62EBA72F247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA72E247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift */; };
 		62EBA731247E564A003B0C39 /* AXILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA730247E564A003B0C39 /* AXILabel.swift */; };
 		62EBA733247E56EB003B0C39 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA732247E56EB003B0C39 /* Constants.swift */; };
+		62EBA737247E5D66003B0C39 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA736247E5D66003B0C39 /* NetworkManager.swift */; };
+		62EBA739247E6133003B0C39 /* TimeSerie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA738247E6133003B0C39 /* TimeSerie.swift */; };
+		62EBA73B247E80D6003B0C39 /* AXIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62EBA73A247E80D6003B0C39 /* AXIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		62EBA72E247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSeriesTableViewCell.swift; sourceTree = "<group>"; };
 		62EBA730247E564A003B0C39 /* AXILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXILabel.swift; sourceTree = "<group>"; };
 		62EBA732247E56EB003B0C39 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		62EBA736247E5D66003B0C39 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		62EBA738247E6133003B0C39 /* TimeSerie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSerie.swift; sourceTree = "<group>"; };
+		62EBA73A247E80D6003B0C39 /* AXIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AXIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,9 @@
 				62EBA72E247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift */,
 				62EBA730247E564A003B0C39 /* AXILabel.swift */,
 				62EBA732247E56EB003B0C39 /* Constants.swift */,
+				62EBA736247E5D66003B0C39 /* NetworkManager.swift */,
+				62EBA738247E6133003B0C39 /* TimeSerie.swift */,
+				62EBA73A247E80D6003B0C39 /* AXIError.swift */,
 			);
 			path = AxosCodeChallenge;
 			sourceTree = "<group>";
@@ -153,10 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				62EBA733247E56EB003B0C39 /* Constants.swift in Sources */,
+				62EBA73B247E80D6003B0C39 /* AXIError.swift in Sources */,
 				624CDFB3247CFD1B00E1DD81 /* AXITextField.swift in Sources */,
+				62EBA737247E5D66003B0C39 /* NetworkManager.swift in Sources */,
 				624CDFB1247CECB700E1DD81 /* AXIButton.swift in Sources */,
 				62EBA729247E159E003B0C39 /* TimeSeriesViewController.swift in Sources */,
 				624CDFAF247CE66200E1DD81 /* SearchTickerViewController.swift in Sources */,
+				62EBA739247E6133003B0C39 /* TimeSerie.swift in Sources */,
 				62EBA72F247E2EA6003B0C39 /* TimeSeriesTableViewCell.swift in Sources */,
 				62EBA731247E564A003B0C39 /* AXILabel.swift in Sources */,
 				624CDF9B247CDF8300E1DD81 /* AppDelegate.swift in Sources */,
