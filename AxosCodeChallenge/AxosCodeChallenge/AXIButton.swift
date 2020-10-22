@@ -29,7 +29,7 @@ class AXIButton: UIButton {
         layer.cornerRadius = 5
         titleLabel?.textColor = .white
         titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
-        backgroundColor = UIColor(red: 0.39, green: 0.65, blue: 0.82, alpha: 1.00)
+        backgroundColor = .systemGreen
         translatesAutoresizingMaskIntoConstraints = false
     }
 
