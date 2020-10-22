@@ -26,7 +26,6 @@ class AXIButton: UIButton {
     }
     
     private func configure() {
-        layer.cornerRadius = 5
         titleLabel?.textColor = .white
         titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         backgroundColor = .systemGreen
