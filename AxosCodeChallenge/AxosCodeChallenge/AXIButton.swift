@@ -26,7 +26,7 @@ class AXIButton: UIButton {
     }
     
     private func configure() {
-        titleLabel?.textColor = .white
+        setTitleColor(.blue, for: .normal)
         titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: .medium)
         backgroundColor = .systemGreen
         translatesAutoresizingMaskIntoConstraints = false
